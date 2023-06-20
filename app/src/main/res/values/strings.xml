@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BaseProject</string>
+    <string name="no_internet_connection">No Internet</string>
+    <string name="unable_to_save_image_into_your_device">Unable to save image into your device</string>
+    <string name="cant_take_picture">Cant take picture</string>
+    <string name="no_image_source_available">No image source available</string>
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
+    <string name="select_image">Select Image</string>
+    <string name="upload_aadhar_card_front_page">Upload Aadhar Card Front Page</string>
+</resources>
