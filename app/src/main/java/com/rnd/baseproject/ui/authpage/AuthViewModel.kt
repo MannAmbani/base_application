@@ -38,14 +38,16 @@ class AuthViewModel @Inject constructor(private val repository: AuthRepository):
         _createAccountResponse.value = repository.createAccount(params, adhar_image)
     }
 
-    fun addNote(note:Note) = viewModelScope.launch { repository.addNote(note) }
-    fun getNotes() = viewModelScope.launch {
-        repository.getNotes()
+    fun addNote(note: Note) = viewModelScope.launch { repository.addNote(note) }
+    fun getNotes(): LiveData<List<Note>> {
+        return repository.getNotes()
     }
+
     fun updateNote(note: Note) = viewModelScope.launch {
         repository.updateNote(note)
     }
-    fun deleteNote(note:Note) = viewModelScope.launch {
+
+    fun deleteNote(note: Note) = viewModelScope.launch {
         repository.deleteNote(note)
     }
 }

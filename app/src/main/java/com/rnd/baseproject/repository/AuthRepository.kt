@@ -18,9 +18,9 @@ class AuthRepository @Inject constructor(val api:AuthApi,private val noteDao:Not
     ) =
         safeApiCall { api.createAccount(params, adhar_image) }
 
-    suspend fun addNote(note :Note) = noteDao.addNote(note)
-    suspend fun getNotes() = noteDao.getAllNotes()
-    suspend fun updateNote(note:Note) = noteDao.updateNote(note)
+    suspend fun addNote(note: Note) = noteDao.addNote(note)
+    fun getNotes() = noteDao.getAllNotes()
+    suspend fun updateNote(note: Note) = noteDao.updateNote(note)
     suspend fun deleteNote(note: Note) = noteDao.deleteNote(note)
 
 

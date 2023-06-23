@@ -1,5 +1,6 @@
 package com.rnd.baseproject.database.dao
 
+import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
@@ -16,7 +17,7 @@ interface NoteDao {
     /**Suspend a function means we cannot use it directly .. we need coroutine scope to call this function*/
     /**Show All Notes */
     @Query("SELECT * FROM note ORDER BY id DESC")
-    suspend fun getAllNotes():List<Note>
+    fun getAllNotes(): LiveData<List<Note>>
 
     /**Insert multiple notes to db*/
     @Insert
