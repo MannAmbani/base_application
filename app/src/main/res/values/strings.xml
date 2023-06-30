@@ -8,4 +8,6 @@
     <string name="cancel">Cancel</string>
     <string name="select_image">Select Image</string>
     <string name="upload_aadhar_card_front_page">Upload Aadhar Card Front Page</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

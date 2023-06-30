@@ -1,4 +1,4 @@
-package com.rnd.baseproject.ui.authpage
+package com.rnd.baseproject.ui.notes
 
 import android.os.Bundle
 import android.util.Log
@@ -50,6 +50,7 @@ import com.rnd.baseproject.BaseFragment
 import com.rnd.baseproject.database.entity.Note
 import com.rnd.baseproject.tools.ShowSelectionDialog
 import com.rnd.baseproject.tools.toast
+import com.rnd.baseproject.ui.authpage.AuthViewModel
 import com.rnd.baseproject.ui.theme.BaseProjectTheme
 import com.rnd.baseproject.ui.widgets.Toolbar
 import dagger.hilt.android.AndroidEntryPoint

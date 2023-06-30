@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/auth_graph"
-    app:startDestination="@id/notesFragment">
+    app:startDestination="@id/searchAndPaginationFragment">
 
     <fragment
         android:id="@+id/authFragment"
@@ -10,6 +11,11 @@
         android:label="AuthFragment" />
     <fragment
         android:id="@+id/notesFragment"
-        android:name="com.rnd.baseproject.ui.authpage.NotesFragment"
+        android:name="com.rnd.baseproject.ui.notes.NotesFragment"
         android:label="NotesFragment" />
+    <fragment
+        android:id="@+id/searchAndPaginationFragment"
+        android:name="com.rnd.baseproject.withXml.recyclerView.SearchFragment"
+        android:label="fragment_search_and_pagination"
+        tools:layout="@layout/fragment_search" />
 </navigation>
